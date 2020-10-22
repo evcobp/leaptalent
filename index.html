@@ -10,6 +10,24 @@
     <!-- https://fonts.google.com/ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/templatemo-video-catalog.css">
+
+    <script>
+    const http = require('http');
+    const page = require('./base.js')
+
+    const hostname = '127.0.0.1';
+    const port = 8000;
+
+    const server = http.createServer((req, res) => {
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'text/plain');
+        res.end('index.html');
+    });
+
+    server.listen(port, hostname, () => {
+        console.log(`Server running at http://${hostname}:${port}/`);
+    });
+    </script>
 <!--
 
 TemplateMo 552 Video Catalog
