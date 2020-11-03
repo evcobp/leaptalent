@@ -83,17 +83,19 @@ https://templatemo.com/tm-552-video-catalog
                 <div class="tm-welcome-container-inner">
                     <img id="leaptalent-logo" src="img/leapingsuit_transparent.png">
                     <p class="tm-welcome-text mb-1 text-white">InterviewMe brought to you by LeapTalent</p>
-                    <p class="tm-welcome-text mb-5 text-white">The YouTube for Job Candidates</p>
+                    <p class="tm-welcome-text mb-5 text-white">The YouTube for Career Talent</p>
                     <a href="https://whereby.com/evco-room" target="_blank" class="btn tm-btn-animate tm-btn-cta tm-icon-down">
                         <span>NEW**Record Your Video Job Posting**NEW</span>
                     </a>
+                    
                 </div>
+                <button id="zessage" type="submit" value="submit" style="display:inline-block; background-color: green; color: white; margin-top: 30px; margin-left: 850px; bottom:50px; font-size:32px; width:20%; left:40%;">Try It Now!</button>
             </div>
-
+            
             <div id="tm-video-container">
                 <video autoplay muted loop id="tm-video">
                     <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
-                        <source src="video/Fried Egg.mp4" type="video/mp4">
+                        <source src="video/endless-flight.mpg" type="video/mp4">
                 </video>    
             </div>
             
@@ -107,14 +109,15 @@ https://templatemo.com/tm-552-video-catalog
                         <div class="col-12">
                             <h2 class="tm-page-title mb-4">Our Candidate Video Interviews</h2>
                             <div class="tm-categories-container mb-5">
-                                <h3 class="tm-text-primary tm-categories-text">Job Functions:</h3>
-                                <ul class="nav tm-category-list">
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link active">All</a></li>
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Sales</a></li>
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Operations</a></li>
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Tech</a></li>
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Finance</a></li>
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Marketing</a></li>
+                                <h3 class="tm-text-primary tm-categories-text" id="job_functions">Job Functions:</h3>
+                                <ul class="nav tm-category-list" id="job_function_filter">
+                                    <li><input type="button" id="all_button" value="All" class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link active"></a></li>
+                                    <li><input type="button" id="sales_button" value="Sales" class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link"></a></li>
+                                    <li><input type="button" id="operations_button" value="Operations" class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link"></a></li>
+                                    <li><input type="button" id="tech_button" value="Tech" class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link"></a></li>
+                                    <li><input type="button" id="finance_button" value="Finance" class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link"></a></li>
+                                    <li><input type="button" id="marketing_button" value="Marketing" class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link"></a></li>
+                                    <li><input type="button" id="humanresources_button" value="Human Resources" class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link"></a></li>
                                 </ul>
                             </div>        
                         </div>
@@ -130,116 +133,189 @@ https://templatemo.com/tm-552-video-catalog
                             </div>    
                             <div class="p-4 tm-bg-gray tm-catalog-item-description">
                                 <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Meet M. Patel</h3>
-                                <ul>
-                                    <li>Smart</li>
-                                    <li>Motivated</li>
-                                    <li>Charismatic</li>
-                                </ul>
+                                    <table style="width:100%">
+                                        <tr style="border-bottom: 1px solid black">
+                                            <th style="text-align: center;">Traits</th>
+                                            <th style="text-align: center;">Skills</th>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center;">Smart</td>
+                                            <td class="skills" value="Sales" style="text-align: center;">Sales</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="second_trait" style="text-align: center;">Charismatic</td>
+                                            <td class="skills" style="text-align: center;">Solution-Selling</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center;">Motivated</td>
+                                            <td class="skills" style="text-align: center;">Above Sales Quota</td>
+                                        </tr>
+                                    </table>                                  
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img src="img/AdminHRCandidate-DApplegate_Snapshot.png" alt="Image" class="img-fluid tm-catalog-item-img">    
+                                <img src="img/AdminHRCandidate-DApplegate_Snapshot.png" style="height:100%;width:100%" alt="Image" class="img-fluid tm-catalog-item-img">    
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
                             </div>
                             <div class="p-4 tm-bg-gray tm-catalog-item-description">
                                 <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Meet D. Applegate</h3>
-                                    <ul>
-                                        <li>Experienced</li>
-                                        <li>Entrepreneur</li>
-                                        <li>Thinker</li>
-                                    </ul>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <th colspan="2">Meet D.Applegate</th>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid black">
+                                            <th style="text-align: center;">Traits</th>
+                                            <th style="text-align: center;">Skills</th>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center;">Smart</td>
+                                            <td class="skills" value="Operations" style="text-align: center;">Operations</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="second_trait_second" style="text-align: center;">Charismatic</td>
+                                            <td class="skills" style="text-align: center;">Solution-Selling</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center;">Motivated</td>
+                                            <td class="skills" style="text-align: center;">Above Sales Quota</td>
+                                        </tr>
+                                    </table>                     
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img style="display:none" src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                                <img src="img/AdminHRCandidate-MPatel_Snapshot.png" style="height:100%;width:100%" alt="Image" class="img-fluid tm-catalog-item-img">    
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
                             </div>                            
                             <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title" style="display:none">Sagittis sodales enim</h3>
-                                <p class="tm-catalog-item-text" style="display:none">You are allowed to use this video catalog for your business websites. 
-                                Please do not make a re-distribution of our template ZIP file on any template collection website.</p>
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Meet S. Smithers</h3>
+                                    <table style="width:100%">
+                                        <tr style="border-bottom: 1px solid black">
+                                            <th>Traits</th>
+                                            <th>Skills</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Smart</td>
+                                            <td class="skills" value="Tech">Tech</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="second_trait_third">Charismatic</td>
+                                            <td class="skills">Solution-Selling</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Motivated</td>
+                                            <td class="skills">Above Sales Quota</td>
+                                        </tr>
+                                    </table>                     
+                                <p class="tm-catalog-item-text" style="display:none"></p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img style="display:none" src="img/tn-04.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                                <img src="img/AdminHRCandidate-DApplegate_Snapshot.png" style="height:100%;width:100%" alt="Image" class="img-fluid tm-catalog-item-img">    
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
                             </div>    
                             <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title" style="display:none">Nam tincidunt consectetur</h3>
-                                <p class="tm-catalog-item-text" style="display:none">You can apply this template for your commercial CMS theme. Nam sem leo, imperdiet non lacinia eget, volutpat ac massa. Donec mattis in velit quis commodo. Cras nec rutrum arcu.</p>
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Meet T. Jordan</h3>
+                                    <table style="width:100%">
+                                        <tr style="border-bottom: 1px solid black">
+                                            <th>Traits</th>
+                                            <th>Skills</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Smart</td>
+                                            <td class="skills" value="Finance">Finance</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Charismatic</td>
+                                            <td class="skills">Solution-Selling</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Motivated</td>
+                                            <td class="skills">Above Sales Quota</td>
+                                        </tr>
+                                    </table>                     
+                                <p class="tm-catalog-item-text" style="display:none"></p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img style="display:none" src="img/tn-05.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                                <img src="img/AdminHRCandidate-DApplegate_Snapshot.png" style="height:100%;width:100%" alt="Image" class="img-fluid tm-catalog-item-img">    
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
                             </div>
                             <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title" style="display:none">Praesent posuere rhoncus</h3>
-                                <p class="tm-catalog-item-text" style="display:none">Duis vulputate nisl metus, eget dapibus nunc ultricies id. Ut augue mauris, varius quis nulla non, sollicitudin consectetur nisl. Donec eget arcu placerat, ullamcorper.</p>
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Meet C. Zelinga</h3>
+                                    <table style="width:100%">
+                                        <tr style="border-bottom: 1px solid black">
+                                            <th>Traits</th>
+                                            <th>Skills</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Smart</td>
+                                            <td class="skills" value="Marketing">Marketing</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Charismatic</td>
+                                            <td class="skills">Solution-Selling</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Motivated</td>
+                                            <td class="skills">Above Sales Quota</td>
+                                        </tr>
+                                    </table>                     
+                                <p class="tm-catalog-item-text" style="display:none"></p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
-                                <img style="display:none" src="img/tn-06.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                                <img src="img/AdminHRCandidate-MPatel_Snapshot.png" style="height:100%;width:100%" alt="Image" class="img-fluid tm-catalog-item-img">    
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
                             </div>                            
                             <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title" style="display:none">Turpis massa aliquam</h3>
-                                <p class="tm-catalog-item-text" style="display:none">Nunc neque risus, ultrices sed luctus at, iaculis at arcu. Pellentesque rutrum velit nec sapien ullamcorper ultrices. Vestibulum lectus risus, laoreet pretium ipsum</p>
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title" >Meet J. Bricker</h3>
+                                    <table style="width:100%">
+                                        <tr style="border-bottom: 1px solid black">
+                                            <th>Traits</th>
+                                            <th>Skills</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Smart</td>
+                                            <td class="skills" value="Human Resources">Human Resources</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Charismatic</td>
+                                            <td class="skills">Solution-Selling</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Motivated</td>
+                                            <td class="skills">Above Sales Quota</td>
+                                        </tr>
+                                    </table>                     
+                                <p class="tm-catalog-item-text" style="display:none"></p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img style="display:none" src="img/tn-07.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>    
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title" style="display:none">Class aptent taciti sociosqu</h3>
-                                <p class="tm-catalog-item-text" style="display:none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum orci sit amet dignissim rhoncus. Pellentesque pretium faucibus vestibulum.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img style="display:none" src="img/tn-08.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title" style="display:none">Donec ac nisl ul elit</h3>
-                                <p class="tm-catalog-item-text" style="display:none">Suspendisse in odio congue, lobortis metus sed, venenatis nisl. In dapibus et massa feugiat facilisis. Maecenas venenatis aliquet nulla, a tincidunt erat suscipit eget.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img style="display:none" src="img/tn-09.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>                            
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title" style="display:none">Sed mattis nisi erat</h3>
-                                <p class="tm-catalog-item-text" style="display:none">Integer ultricies mi eu aliquet cursus. Nam sem leo, imperdiet non lacinia eget, volutpat ac massa. Donec mattis in velit quis commodo. Cras nec rutrum arcu.</p>
-                            </div>
-                        </div>
-                    </div>
-
+                        <script>
+                        var sales_button = document.getElementById("sales_button").onclick = function filterFunctions() {
+                            var skills = document.querySelectorAll("td.skills");
+                            if (skills != "Sales") {
+                                document.getElementById("second_trait").innerHTML = "Funny";
+                            }
+                             if (skills != "Operations") {
+                                document.getElementById("second_trait_second").innerHTML = "Boring";
+                            }
+                        }
+                        </script>
                     <!-- Catalog Paging Buttons -->
                     <div>
                         <ul class="nav tm-paging-links">
@@ -300,7 +376,8 @@ https://templatemo.com/tm-552-video-catalog
 
     </div> <!-- .tm-page-wrap -->
 
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script??? src="js/jquery-3.4.1.min.js"></script???>
+    <script src='//zessage.com/js/widget/site.js' lang='en'></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
         function setVideoSize() {
